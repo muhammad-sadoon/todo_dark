@@ -1,0 +1,234 @@
+html,
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    transition: all 0.5s;
+}
+
+body {
+    background-color: black;
+}
+
+.navbar {
+    margin: 20px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 30px;
+    width: 95%;
+    left: 2.5%;
+    background-color: #0D0D0D;
+    min-height: 70px;
+    border-top: 3px solid #262626;
+    border-radius: 30px;
+    position: fixed;
+    top: 20px;
+    z-index: 9999;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #626262;
+    font-weight: 700;
+}
+
+.navbar a:hover {
+    color: #bbbbbb;
+}
+
+.navbar button {
+    padding: 10px 20px;
+    background-color: #FFF600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border-radius: 30px;
+    border: none;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0px auto;
+}
+
+.page_1 {
+    margin-top: 100px;
+    min-height: 80vh;
+    width: 100%;
+    background: transparent;
+    background-size: 50px 50px;
+    position: relative;
+    background-image: linear-gradient(to right, #626262, transparent 2px),
+        linear-gradient(#626262, transparent 2px);
+    padding: 0px 50px;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.page_1 h1 {
+    font-size: 56px;
+}
+
+.page_1 .heading {
+    z-index: 15;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 100px;
+}
+
+.page_1 .backGround_effect {
+    background: radial-gradient(transparent 10px, black);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.page_1 h1 span {
+    color: #FFF600;
+    text-shadow: 0px 0px 10px #FFF600;
+}
+
+.heading_1 {
+    width: 70%;
+}
+
+.heading_2 {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+
+.heading_2 .heading_button {
+    gap: 20px;
+    display: flex;
+}
+
+.heading p {
+    font-size: 25px;
+    color: #626262;
+}
+
+.heading_2 .heading_button button:nth-child(1) {
+    padding: 10px 20px;
+    background-color: #FFF600;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border-radius: 30px;
+    border: none;
+    font-size: 20px;
+}
+
+.heading_2 .heading_button button:nth-child(2) {
+    padding: 10px 20px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border-radius: 30px;
+    border: 2px solid gray;
+    background: transparent;
+    color: white;
+    font-size: 20px;
+}
+
+.page_2 {
+    height: 60vh;
+    width: 90%;
+    margin: 20px auto;
+    background: #262626;
+    border-top: 2px solid #626262;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.page_2 img {
+    height: 100%;
+    width: 300px;
+}
+
+.page_2 .img_1 img {
+    z-index: 30;
+    position: relative;
+    transform: rotate(20deg) translate(100px);
+}
+
+.page_2 .img_2 {
+    z-index: 31;
+    align-self: flex-end;
+}
+
+.page_2 .img_3 {
+    transform: rotate(20deg) translate(-100px);
+}
+
+@media (max-width:1000px) {
+    .heading_1 {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:850px) {
+    .navbar .logo img {
+        width: 130px;
+    }
+
+    .navbar ul {
+        display: none;
+    }
+
+    .page_1 h1 {
+        font-size: 40px;
+    }
+
+    .page_1 .heading {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .heading_2 .heading_button {
+        flex-direction: column;
+    }
+    .page_2 {
+        margin-top: 100px;
+    }
+    .page_2 .img_1 {
+        display: none;
+    }
+    
+    .page_2 .img_3 {
+        display: none;
+    }
+
+}
+
+@media (max-width:400px) {
+    .page_1 h1 {
+        font-size: 30px;
+    }
+
+    .heading p {
+        font-size: 20px;
+        color: #626262;
+    }
+}
