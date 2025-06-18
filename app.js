@@ -36,3 +36,12 @@ function next_btn_2() {
     handlerParentDev_2.appendChild(firstItem)
     arr_2.push(firstItem)
 }
+function toggle(arg){
+    console.log(arg.style)
+    if(arg.style.height == "100px"){
+        arg.style.height = "0px";
+    }else{
+        arg.style.height = "100px";
+    }
+
+}

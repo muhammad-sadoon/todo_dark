@@ -8,6 +8,13 @@ html,
     scroll-behavior: smooth;
 }
 
+*::selection {
+    background-color: #FFF600;
+    color: #ffffff;
+    transition: all ease 1s;
+    font-size: 21px;
+}
+
 body {
     background-color: black;
 }
@@ -138,7 +145,7 @@ body {
     gap: 10px;
     border-radius: 30px;
     border: none;
-    font-size: 20px;
+    font-size: 16px;
 }
 
 .heading_button button:nth-child(2) {
@@ -151,7 +158,7 @@ body {
     border: 2px solid gray;
     background: transparent;
     color: white;
-    font-size: 20px;
+    font-size: 16px;
 }
 
 .page_2 {
@@ -534,13 +541,15 @@ body {
     font-size: 20px;
     color: #626262;
 }
-.pricing{
+
+.pricing {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 20px;
 }
-.pricing .card{
+
+.pricing .card {
     padding: 40px;
     background: #0d0d0d;
     width: 400px;
@@ -552,24 +561,29 @@ body {
     justify-content: center;
     flex-direction: column;
 }
-.pricing .card_2{
+
+.pricing .card_2 {
     background-image: radial-gradient(circle farthest-side at 0% 0%, #fff70088, #0d0d0d 70%);
 }
-.pricing h1{
+
+.pricing h1 {
     width: 100%;
     text-align: left;
     color: #ffffff;
 }
-.pricing p{
+
+.pricing p {
     text-align: left;
     width: 100%;
     color: #CACACA;
 }
-.pricing h2{
+
+.pricing h2 {
     font-size: 25px;
     color: #ffffff;
 }
-.pricing button{
+
+.pricing button {
     padding: 10px 20px;
     display: flex;
     align-items: center;
@@ -579,27 +593,186 @@ body {
     border-radius: 20px;
     font-weight: 600;
 }
+
 .pricing .card_1 button {
     background-color: #bbbbbb;
 }
+
 .pricing .card_2 button {
     background-color: var(--yellow-color);
 }
+
 .pricing .card ul {
     list-style: url("./assets/img/gray_check.svg");
     margin-left: 20px;
     color: #ffffff;
 }
+
 .pricing .card_2 ul {
     list-style: url("./assets/img/yellow_check.svg");
     margin-left: 20px;
     color: #ffffff;
 }
-.pricing ul span{
+
+.pricing ul span {
     position: relative;
     top: -5px;
 }
 
+.page_7 {
+    min-height: 100vh;
+    padding: 0px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.page_7 h5 {
+    color: var(--yellow-color);
+    text-shadow: 0px 0px 10px var(--yellow-color);
+    text-align: center;
+}
+
+.page_7 h1 {
+    font-size: 48px;
+    width: 50%;
+    color: #bbbbbb;
+    text-align: center;
+    margin: auto;
+}
+.page_7 p{
+    color: #626262;
+}
+.page_7 .list {
+    width: 90%;
+}
+
+.page_7 .list ul li {
+    margin: 10px 0px;
+    border-radius: 20px;
+    border-top: 2px solid #626262;
+    background: #0d0d0d;
+    padding: 20px;
+    list-style: none;
+    color: #626262;
+}
+
+.list .list_header {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding: 0px 20px;
+    font-size: 30px;
+    color: #ffffff;
+    gap: 20px;
+}
+
+.list .list_content {
+    padding: 0px 20px;
+    height: 0;
+    transition: all ease 0.5s;
+    overflow: hidden;
+}
+
+/* .list ul li:hover .list_content{
+    height: 100px;
+} */
+.list ul li .list_content h3 {
+    padding: 20px;
+    font-weight: 200;
+    font-size: 20px;
+}
+button:hover{
+    transform: scale(0.9);
+}
+.page_8{
+    width: 100%;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    margin-top: 100px;
+}
+.page_8 .box{
+    min-height: 50vh;
+    width: 90%;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    background: #262626;
+    padding: 0px 20px;
+    border-top: 2px solid #626262;
+    border-radius: 20px;
+    margin: 20px 0px;
+}
+.left_content_page_8{
+    align-self: self-start;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 50px 0px 0px 0px;
+}
+.left_content_page_8 h1{
+    font-size: 56px;
+    color: #bbbbbb;
+    font-weight: 400;
+}
+.left_content_page_8 p{
+    color: #626262;
+}
+.right_content_page_8{
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    width: 50%;
+}
+.right_content_page_8 img{
+    width: 300px;
+}
+footer{
+    padding: 0px 20px;
+    min-height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 20px;
+}
+footer ul{
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    flex-wrap: wrap;
+    gap: 20px;
+    list-style: none;
+}
+footer ul li a{
+    color: #626262;
+    text-decoration: none;
+}
+footer h4{
+    color: #bbbbbb;
+    margin: 20px 0px;
+}
+footer input{
+    padding: 10px 20px;
+    border-radius: 20px;
+    background-color: transparent;
+    border: 1px solid #626262;
+    color: #ffffff;
+}
+footer button{
+    margin: 20px 0px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    background-color: var(--yellow-color);
+    box-shadow: 0px 0px 10px 0px var(--yellow-color);
+    border: none;
+}
+footer input:active{
+    outline: none;
+    border: none;
+}
 @media (max-width:1000px) {
     .heading_1 {
         width: 100%;
@@ -655,13 +828,37 @@ body {
     .page_4>div {
         width: 100%;
     }
-    .page_4 .right_content_page_4{
+
+    .page_4 .right_content_page_4 {
         width: 100%;
     }
-    .pricing{
+
+    .pricing {
         flex-direction: column;
     }
-    .pricing .card{
+
+    .pricing .card {
+        width: 100%;
+    }
+    .page_7 h1{
+        width: 100%;
+    }
+    .page_7 p{
+        width: 100%;
+        text-align: center;
+    }
+    .list_header{
+        font-size: 30px;
+    }
+    .page_8 .box{
+        flex-direction: column;
+        padding: 0px 20px;
+        gap: 20px;
+    }
+    .page_8 .left_content_page_8 h1 {
+        font-size: 35px;
+    }
+    .page_8 .right_content_page_8{
         width: 100%;
     }
 }
@@ -700,10 +897,11 @@ body {
         width: 100%;
     }
 
-    .page_4 .right_content_page_4 img{
+    .page_4 .right_content_page_4 img {
         width: 100%;
     }
-     .rate_content div {
+
+    .rate_content div {
         align-items: start;
     }
 
@@ -736,10 +934,40 @@ body {
         width: 100%;
         font-size: 16px;
     }
-    .pricing{
+
+    .pricing {
         flex-direction: column;
     }
-    .pricing .card{
+
+    .pricing .card {
         width: 300px;
+    }
+
+    .page_7 .list {
+        width: 100%;
+    }
+
+    .list .list_header {
+        font-size: 18px;
+    }
+
+    .list ul li .list_content h3 {
+        font-size: 14px;
+        padding: 0;
+    }
+
+    .page_7 {
+        align-items: start;
+    }
+    .page_7 h1{
+        font-size: 30px;
+        width: 100%;
+        text-align: left;
+    }
+    .page_8 .right_content_page_8 img{
+        width: 200px;
+    }
+    footer{
+        flex-direction: column;
     }
 }
